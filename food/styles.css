@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+header::before{
+    z-index: -10;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: cornsilk;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+}
+header ul{
+    display: flex;
+}
+header .logo{
+    margin-left: 20px;
+    color: brown;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+header ul li{margin-top: 20px;}
+header ul li a{
+    font-size: 20px;
+    margin-right: 50px;
+    color: black;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header ul li a:hover{
+    color: brown;
+    transform: translateY(-5px);
+    text-decoration: underline;
+}
+header .search{
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(177, 175, 175);
+    margin-top: 20px;
+    margin-left: 40px;
+}
+header button{
+    height: 25px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 10px;
+    margin-right: 90px;
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+}
+header button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    transform: translateY(-5px);
+}
+header .search #search-logo{
+    margin-left: 220px;
+    margin-top: 8px;
+    color: brown;
+}
+/**about**/
+.about{
+    position: absolute;
+    top: 34%;
+    left: 20%;
+}
+.about h1{
+    font-size: 48px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.about p{
+    font-style: italic;
+    color: gray;
+    font-size: 18px;
+}
+.about button{
+    height: 25px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: orange;
+    transition: all 0.6s ease;
+}
+.about button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    transform:translateX(-9px) ;
+}
+/**menu**/
+.menu{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+.menu .menu-img{
+    display: flex;
+}
+.menu .menu-img .img-one .Chessy{
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+}
+.menu .menu-img .img-two .salad{
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+}
+.menu .menu-img .img-three .chicken{
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+}
+.menu h3{
+    color: brown;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.menu .menu-img p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.pizza{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+.pizza .pizza-img{
+    height: 250px;
+    width: 400px;
+    border-radius: 50%;
+}
+.slice .slice-img{
+    position: absolute;
+    left: 70%;
+    top: 60%;
+    height: 150;
+    width: 300;
+    border-radius: 50%;
+}

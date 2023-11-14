@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; 
+    color: white;
+}
+body{
+    background-color: black;
+}
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+   
+}
+.header::before {
+    content: ""; /* Ensure that the pseudo-element has some content */
+    background-color: black;
+    opacity: 0.2;
+    position: absolute; /* Position it absolutely within the .header */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the .header */
+    height: 100%; /* Full height of the .header */
+    z-index: -1; /* Place it behind the content of the .header */
+}
+.header ul{
+    display: flex;
+    margin-top: 20px;
+}
+.header .nav-bar li a{
+    margin-right: 30px;
+    transition: color 0.5s, transform 0.5s;
+    color: white;
+}
+.header .nav-bar li a:hover{
+    color: orange;
+    transform: translateY(-4px);
+}
+
+.header .h-right{
+    display: flex;
+}
+.header .h-right a{
+    margin-right: 20px;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+.header .h-right a:hover{
+    color: orange;
+    transform: translateY(-4px);
+}
+.header .h-right a i:hover{
+    color: orange;
+    transform: translateY(-4px);
+}
+.header .logo{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.header .logo span{
+    color: orange;
+}
+/**first-sec**/
+.first-sec{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first-sec .content{
+    
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+.first-sec .content h4{
+    color: orange;
+    font-size: 30px;
+}
+.first-sec .content button{
+    height: 30px;
+    border: 1px solid black;
+    background-color: orange;
+    color: black;
+    transition: all 0.5s ease;
+}
+.first-sec .content button:hover{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    transform: translateY(-3px);
+}
+.first-sec .content p{
+    font-size: 18px;
+}
+/**second-sec**/
+.second-sec .content-second{
+    width: 100%;
+    height: 130px;
+}
+.second-sec .content-second .img-1{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: url(nap1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+    display: inline-block;
+    margin-left: 160px;
+    margin-right: 60px;
+}
+.second-sec .content-second .img-1:hover{
+    transform: translateY(-5px);
+}
+.second-sec .content-second .img-2{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: url(nap2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+    display: inline-block;
+    margin-right: 60px;
+}
+.second-sec .content-second .img-2:hover{
+    transform: translateY(-5px);
+}
+.second-sec .content-second .img-3{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: url(nap3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+    display: inline-block;
+    margin-right: 60px;
+}
+.second-sec .content-second .img-3:hover{
+    transform: translateY(-5px);
+}
+.second-sec .content-second .img-4{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: url(nap4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+    display: inline-block;
+    margin-right: 60px;
+}
+.second-sec .content-second .img-4:hover{
+    transform: translateY(-5px);
+}
+.second-sec .content-second .img-5{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: url(nap5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease;
+    display: inline-block;
+    margin-right: 60px;
+}
+.second-sec .content-second .img-5:hover{
+    transform: translateY(-5px);
+}
+.second-sec .one{
+    display: inline-block;
+    margin-left: 180px;
+    margin-top: 10px;
+}
+.second-sec  p:hover{
+    color: orange;
+}
+.second-sec .two{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.second-sec .three{
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.second-sec .four{
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 10px;
+}
+.second-sec .five{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+/**third-sec**/
+.third-sec{
+    height: 700px;
+    width: 900px;
+    position: absolute;
+    left: 20%;
+    top: 170%;
+    display: flex;
+}
+.third-sec .img{
+    height: 450px;
+    width: 550px;
+    background-image: url(h1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.third-sec .content-img{
+    margin-left: 60px;
+    margin-top: 55px;
+}
+.third-sec .content-img h3{
+    color: orange;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.third-sec .content-img button{
+    color: black;
+    background-color: orange;
+    border: 1px solid black;
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    transition: all 0.9s ease;
+}
+.third-sec .content-img button:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transform: translateX(-5px);
+}
+/**fourth-sec**/
+.fourth-sec{
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    top: 270%;
+    left: 15%;
+   
+}
+.fourth-sec h1{
+    text-align: center;
+}
+.fourth-sec .images{
+    display: flex;
+    margin-top: 30px;
+}
+.fourth-sec .images .four-img-1{
+    height: 400px;
+    width: 300px;
+    background-image: url(t1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    margin-right: 60px;
+   
+}
+.fourth-sec .images .four-img-2{
+    height: 400px;
+    width: 300px;
+    background-image: url(t2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    margin-right: 60px;
+}
+.fourth-sec .images .four-img-3{
+    height: 400px;
+    width: 300px;
+    background-image: url(t3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    
+}
+.fourth-sec .images h3{
+    margin-top: 110%;
+    margin-left: 20px;
+}
+.fourth-sec .images .four-img-1:hover{
+    transform: translateY(-15px);
+}
+.fourth-sec .images .four-img-2:hover{
+    transform: translateY(-15px);
+}
+.fourth-sec .images .four-img-3:hover{
+    transform: translateY(-15px);
+}
+.fourth-sec button{
+    height: 30px;
+    width: 75px;
+    color: black;
+    font-weight: bold;
+    background-color: orange;
+    border: black;
+    transition: all 0.8s ease;
+    margin-left: 48%;
+    margin-top: 30px;
+}
+.fourth-sec button:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    transform: translateX(-10px);
+}
+/**fifth-sec**/
+.fifth-sec{
+    position: absolute;
+    top: 400%;
+    left: 25%;
+    display: flex;
+}
+.fifth-sec .content-fifth{
+    height: 450px;
+    width: 300px;
+    margin-top: 90px;
+    margin-right: 80px;
+}
+.fifth-sec .content-fifth h3{
+    color: orange;
+    margin-bottom: 10px;
+}
+.fifth-sec .content-fifth h1{
+    font-weight: bolder;
+}
+.fifth-sec .content-fifth button{
+    color: black;
+    background-color: orange;
+    border: 1px solid black;
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    transition: all 0.9s ease;
+}
+.fifth-sec .content-fifth button:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transform: translateX(-5px);
+}
+.fifth-sec .image-fifth{
+    height: 500px;
+    width: 350px;
+    background-image: url(c1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px
+}
+/**footer**/
+.footer{
+    position: absolute;
+    top: 500%;
+    color: gray;
+    left: 20%;
+    display: flex;
+}
+.footer .footer-two{
+    display: flex;
+    position: absolute;
+    left: 250%;
+}
+.footer .footer-two .email{
+    height: 25px;
+    width: 200px;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+}
+.footer .footer-two ::placeholder{
+    color: white;
+}
+.footer .footer-two button{
+    color: black;
+    background-color: orange;
+    border: 1px solid black;
+    height: 25px;
+    width: 80px;
+    border-radius: 5px;
+    transition: all 0.9s ease;
+}
+.footer .footer-two button:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.footer-details{
+    position: absolute;
+    top: 520%;
+    left: 20%;
+    display: flex;
+}
+.footer-details .list-four{
+    position: absolute;
+    left: 850%;
+    
+}
+.footer-details .list-three{
+    position: absolute;
+    left: 650%;
+}
+.footer-details .list-two{
+    position: absolute;
+    left: 300%;
+}
+.footer-details ul li{
+    transition: all 0.5s ease;
+}
+.footer-details ul li:hover{
+    color: orange;
+    transform: translateY(-5px);
+}
+.footer-details .list-four .last{
+    display: flex;
+    width: 40px;
+    justify-content: space-evenly;
+}
